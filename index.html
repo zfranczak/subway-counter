@@ -11,11 +11,24 @@
     <div id="heading">
       <h1>Subway Counter</h1>
       <h2>Count all of the people around you with ease!</h2>
-    </div>
-    <div id="increment"></div>
-    <div id="save"></div>
-    <div id="last-saves">
-      <h3>Last Saves -</h3>
+      <div id="box">
+        <h1 id="count">0</h1>
+      </div>
+
+      <div id="increment">
+        <button id="incButton" onclick="incUp()">INCREMENT</button>
+      </div>
+      <div id="save">
+        <button id="saveButton" onclick="saves()">SAVE</button>
+      </div>
+      <div id="last-saves">
+        <h3>
+          Last Saves:
+          <h3 id="paste"></h3>
+        </h3>
+
+        <ul id="save-list"></ul>
+      </div>
     </div>
     <script src="index.js"></script>
   </body>
